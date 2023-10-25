@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Portfolio-Ranjit</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav class="navbar navbar-expand-lg bg-white sticky-top">
+        <div class="container-fluid">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand name-tag" href="#">R. Acharya</a>
+            <div>
+              <span class="line"><</span>
+              <span class="skill">frontend developer</span>
+              <span class="line">/></span>
+            </div>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end offcanvas-area"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header justify-content-end">
+              <button
+                type="button"
+                class="btn-close btn-close-custom"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <div
+                class="navbar-nav align-items-center justify-content-end flex-grow-1 pe-3"
+              >
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#">Contact</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <section class="hero-section">
+        <div class="container-fluid">
+          <div class="hero-content">
+            <h1 class="hero-heading-primary">Hey, I'm Ranjit Acharya</h1>
+            <div class="hero-heading-info">
+              <p class="hero-text-primary">
+                I specialize in frontend web development with a strong focus on
+                crafting the user interfaces and interactive components of
+                websites and web applications. My work directly contributes to
+                the overall success and functionality of the product.
+              </p>
+            </div>
+            <div class="hero-banner d-flex">
+              <div class="hero-banner-info d-flex">
+                <div class="hero-banner-logo d-flex">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div>
+                  <span class="level">IT</span>
+                  <p class="level-desc">Graduate</p>
+                </div>
+              </div>
+
+              <div class="hero-banner-bar"></div>
+
+              <div class="hero-banner-info d-flex">
+                <div class="hero-banner-logo d-flex">
+                  <i class="fa-solid fa-award"></i>
+                </div>
+                <div>
+                  <span class="level">5 + Projects</span>
+                  <p class="level-desc">Completed</p>
+                </div>
+              </div>
+
+              <div class="hero-banner-bar"></div>
+
+              <div class="hero-banner-info d-flex">
+                <div class="hero-banner-logo d-flex">
+                  <i class="fa-solid fa-laptop-file"></i>
+                </div>
+                <div>
+                  <span class="level">1 + Years</span>
+                  <p class="level-desc">Experience</p>
+                </div>
+              </div>
+            </div>
+            <div class="hero-cta">
+              <a
+                href="./assets/Resume-Ranjit-Acharya.pdf"
+                download=""
+                class="btn-bg"
+                >Download Resume</a
+              >
+            </div>
+          </div>
+          <div class="hero-socials bg-white">
+            <div class="hero-social">
+              <a
+                href="https://www.linkedin.com/in/ranjit-acharya/"
+                class="hero-social-icon-link"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  src="./assets/linkedIn-circle.svg"
+                  alt="Ranjit Acharya Linkedin Profile"
+                  class="hero-social-icon"
+                />
+              </a>
+            </div>
+            <div class="hero-social">
+              <a
+                href="https://github.com/achranjit013"
+                class="hero-social-icon-link"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  src="./assets/github-circle.svg"
+                  alt="Ranjit Acharya Github Profile"
+                  class="hero-social-icon"
+                />
+              </a>
+            </div>
+            <div class="hero-social">
+              <a
+                href="https://www.facebook.com/ranzeet.acharya/"
+                class="hero-social-icon-link"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  src="./assets/facebook-circle.svg"
+                  alt="Ranjit Acharya Facebook Profile"
+                  class="hero-social-icon"
+                />
+              </a>
+            </div>
+            <div class="hero-social">
+              <a
+                href="https://www.facebook.com/ranzeet.acharya/"
+                class="hero-social-icon-link"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  src="./assets/instagram-circle.svg"
+                  alt="Ranjit Acharya Instagram Profile"
+                  class="hero-social-icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="hero-mouse-scroll-cont">
+            <div class="mouse"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
