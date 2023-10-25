@@ -38,6 +38,10 @@ nav {
   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
 }
 
+nav > div {
+  padding: 0 1rem !important;
+}
+
 .name-tag {
   font-size: 1.8rem;
   text-transform: uppercase;
