@@ -16,7 +16,7 @@
     max-width: 80rem;
   }
 
-  .text-primary,
+  .text--primary,
   .img-tag {
     font-size: 1.8rem;
     line-height: 1.5;
@@ -72,7 +72,7 @@
     grid-area: heading; /* to use for skills section */
   }
 
-  .text-primary,
+  .text--primary,
   .img-tag {
     font-size: 2.2rem;
   }
