@@ -31,6 +31,7 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- navbar -->
       <nav class="navbar navbar-expand-lg bg-white sticky-top">
         <div class="container-fluid">
           <div class="d-flex align-items-center">
@@ -80,7 +81,9 @@
           </div>
         </div>
       </nav>
+      <!-- end navbar -->
 
+      <!-- hero-section / home -->
       <section class="hero-section">
         <div class="container-fluid">
           <div class="hero-content">
@@ -200,14 +203,16 @@
           </div>
         </div>
       </section>
+      <!-- end hero-section -->
 
+      <!-- skills-section -->
       <section class="skills-section" id="skills--section">
         <div class="container-fluid">
           <div class="skills-content">
-            <h1 class="heading-primary heading-skills">Skills</h1>
+            <h1 class="heading-primary heading-secondary">Skills</h1>
 
             <div class="heading-info d-flex justify-content-center">
-              <p class="d-flex align-items-center text--primary text-skills">
+              <p class="d-flex align-items-center text--primary text-secondary">
                 Welcome to my skills section, where abilities meet action. These
                 skills are the building blocks of my professional journey,
                 reflecting my commitment to excellence. Please feel free to
@@ -291,9 +296,255 @@
           </div>
         </div>
       </section>
+      <!-- end skills-section -->
+
+      <!-- projects-section -->
+      <section class="projects-section" id="projects--section">
+        <div class="container-fluid">
+          <div class="projects-content">
+            <h1 class="heading-primary heading-secondary">Projects</h1>
+
+            <div class="heading-info d-flex justify-content-center">
+              <p class="d-flex align-items-center text--primary text-secondary">
+                Welcome to my projects section, where you'll discover my world
+                of achievements and creativity. Each project is a testament to
+                my problem-solving abilities and dedication to results. Dive in
+                and see how I turn ideas into reality.
+              </p>
+            </div>
+
+            <div class="projects d-grid">
+              <div class="list-group projects-link">
+                <button
+                  class="list-group-item list-group-item-action bg-transparent text--primary link-project-1 show-default-link"
+                  onclick="handleClick('1')"
+                >
+                  Facts-List: Today I Learned
+                </button>
+                <button
+                  class="list-group-item list-group-item-action bg-transparent text--primary link-project-2"
+                  onclick="handleClick('2')"
+                >
+                  Pig Game
+                </button>
+                <button
+                  class="list-group-item list-group-item-action bg-transparent text--primary link-project-3"
+                  onclick="handleClick('3')"
+                >
+                  TV Shows List API
+                </button>
+                <button
+                  class="list-group-item list-group-item-action bg-transparent text--primary link-project-4"
+                  onclick="handleClick('4')"
+                >
+                  Number Guessing Game
+                </button>
+              </div>
+              <div
+                class="card bg-transparent project-1"
+                id="projects-project-1"
+              >
+                <img
+                  src="./assets/today-i-learned.png"
+                  class="card-img-top"
+                  alt="today i learned"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Facts-List: Today I Learned</h5>
+                  <p class="card-text">
+                    Facts-List offers a dynamic and interactive experience that
+                    revolves around the fascinating world of facts. It allow
+                    users to share the facts using the user-friendly form and
+                    also engage with the facts by liking, disliking, or marking
+                    them as "mindblowing". Users can customize their list by
+                    selecting a category from the menu and only discover the
+                    facts that align with their interests. Facts-List is not
+                    just a platform for sharing knowledge; it's a hub for
+                    sparking curiosity, and celebrating the diversity of facts.
+                  </p>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <p class="card-text--sm">October, 2023</p>
+                    <div class="d-flex btn--links">
+                      <a
+                        href="https://github.com/achranjit013/react-fact-app"
+                        target="_blank"
+                        class="btn btn-project-link"
+                      >
+                        <i class="fa-brands fa-github"></i
+                      ></a>
+                      <a
+                        href="https://react-fact-app.vercel.app/"
+                        target="_blank"
+                        class="btn btn-project-link"
+                      >
+                        <i class="fa-brands fa-chrome"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card bg-transparent project-2"
+                id="projects-project-2"
+                style="display: none"
+              >
+                <img
+                  src="./assets/pig-game.png"
+                  class="card-img-top"
+                  alt="pig game"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Pig Game</h5>
+                  <p class="card-text">
+                    Pig Game is a simple and fun two-player dice game that
+                    challenges your luck and decision-making skills. The game
+                    revolves around rolling a dice to accumulate points while
+                    avoiding the dreaded "1" that resets your turn. The first
+                    player to reach a score of 100 wins the game.
+                  </p>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <p class="card-text--sm">August, 2023</p>
+                    <div class="d-flex btn--links">
+                      <a
+                        href="https://github.com/achranjit013/pig-game"
+                        target="_blank"
+                        class="btn btn-project-link"
+                      >
+                        <i class="fa-brands fa-github"></i
+                      ></a>
+                      <a
+                        href="https://pig-game-qvjvfube7-ranjits-projects.vercel.app/"
+                        target="_blank"
+                        class="btn btn-project-link"
+                      >
+                        <i class="fa-brands fa-chrome"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card bg-transparent project-3"
+                id="projects-project-3"
+                style="display: none"
+              >
+                <img
+                  src="./assets/tv-shows-list-api.png"
+                  class="card-img-top"
+                  alt="tv shows list api"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">TV Shows List API</h5>
+                  <p class="card-text">TV Shows</p>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <p class="card-text--sm">September, 2023</p>
+                    <div class="d-flex btn--links">
+                      <a
+                        href="https://github.com/achranjit013/shows-list-api"
+                        target="_blank"
+                        class="btn btn-project-link"
+                      >
+                        <i class="fa-brands fa-github"></i
+                      ></a>
+                      <a
+                        href="https://shows-list-api.vercel.app/"
+                        target="_blank"
+                        class="btn btn-project-link"
+                      >
+                        <i class="fa-brands fa-chrome"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="card bg-transparent project-4"
+                id="projects-project-4"
+                style="display: none"
+              >
+                <img
+                  src="./assets/guess-my-number.png"
+                  class="card-img-top"
+                  alt="guessing number game"
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Number Guessing Game</h5>
+                  <p class="card-text">
+                    The Number Guessing Game is a fun and interactive project
+                    that allows users to test their guessing skills by choosing
+                    a number between 1 and 20 and comparing it with a randomly
+                    generated number by the program. Whether you're looking for
+                    a quick challenge or a way to pass the time, this game is
+                    perfect for players of all ages.
+                  </p>
+                  <div
+                    class="d-flex align-items-center justify-content-between"
+                  >
+                    <p class="card-text--sm">September, 2023</p>
+                    <div class="d-flex btn--links">
+                      <a
+                        href="https://github.com/achranjit013/guess-my-number"
+                        target="_blank"
+                        class="btn btn-project-link"
+                      >
+                        <i class="fa-brands fa-github"></i
+                      ></a>
+                      <a
+                        href="https://achranjit013.github.io/guess-my-number/"
+                        target="_blank"
+                        class="btn btn-project-link"
+                      >
+                        <i class="fa-brands fa-chrome"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end projects-section -->
+
+      <!-- about-section -->
+      <!-- end about-section -->
     </div>
 
     <!-- bootstrap script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+      const handleClick = (arg) => {
+        document.querySelector(`.project-1`).style.display = "none";
+        document.querySelector(`.project-2`).style.display = "none";
+        document.querySelector(`.project-3`).style.display = "none";
+        document.querySelector(`.project-4`).style.display = "none";
+
+        document
+          .querySelector(`.link-project-1`)
+          .classList.remove("show-default-link");
+        document
+          .querySelector(`.link-project-2`)
+          .classList.remove("show-default-link");
+        document
+          .querySelector(`.link-project-3`)
+          .classList.remove("show-default-link");
+        document
+          .querySelector(`.link-project-4`)
+          .classList.remove("show-default-link");
+
+        const projectLink = document.querySelector(`.link-project-${arg}`);
+        projectLink.classList.add("show-default-link");
+
+        const card = document.querySelector(`.project-${arg}`);
+        card.style.display = "block";
+      };
+    </script>
   </body>
 </html>

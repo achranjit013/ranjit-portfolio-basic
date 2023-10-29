@@ -236,7 +236,12 @@ nav > div {
 /* skills section */
 .skills-section {
   padding: 10rem 0;
-  background: var(--color-bg);
+  /* background: var(--color-bg); */
+  background: linear-gradient(
+    to right,
+    rgba(245, 245, 245, 0.8),
+    rgba(245, 245, 245, 0.8)
+  );
 }
 
 .skills-content {
@@ -245,11 +250,11 @@ nav > div {
   margin: 0 auto;
 }
 
-.heading-skills {
+.heading-secondary {
   position: relative;
 }
 
-.heading-skills::after {
+.heading-secondary::after {
   content: "";
   width: 100%;
   height: 1px;
@@ -264,7 +269,7 @@ nav > div {
 .skills {
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin: 10rem 0;
+  margin: 10rem 0 0 0;
 }
 
 .skill {
@@ -278,4 +283,84 @@ nav > div {
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.4;
+}
+
+/* projects-section */
+.projects-section {
+  padding: 10rem 0;
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url(/assets/common-bg.svg);
+  background-position: center;
+}
+
+.projects-content {
+  max-width: 90rem;
+  width: 92%;
+  margin: 0 auto;
+}
+
+.projects {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+  margin: 10rem 0 0 0;
+}
+
+.show-default-link {
+  color: var(--color-tertiary) !important;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100%;
+  line-height: 1.4;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.card-text--sm {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  width: 100%;
+  line-height: 1.2;
+}
+
+.btn-project-link:link,
+.btn-project-link:visited {
+  background: var(--color-tertiary);
+  color: var(--color-primary);
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+.btn-project-link:hover,
+.btn-project-link:active {
+  background: var(--color-tertiary);
+  color: var(--color-secondary);
+}
+
+.btn-project-link > i {
+  font-size: 2rem;
+}
+
+.btn--links {
+  gap: 0.3rem;
+}
+
+.projects-link {
+  width: 50%;
+  transform: translate(50%);
 }
